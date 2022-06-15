@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="txt">
+    <button id="btn_check">Check</button>
+    <script>
+        document.getElementById('btn_check').addEventListener('click', function () {
+            var txt = document.getElementById('txt').value;
+            var arr = txt.split(' ').filter(function (value) { return value }).join(' ');
+            console.log(arr);
+        })
+    </script>
+</body>
+
+</html>

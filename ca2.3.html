@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="txt">
+    <button id="btn_check">Check</button>
+    <script>
+        document.getElementById('btn_check').addEventListener('click', function () {
+            var txt = document.getElementById('txt').value;
+            console.log(txt);
+
+            for (var i = 0; i < txt.length / 2; i++) {
+                if (txt[i] != txt[txt.length - 1 - i]) {
+                    alert("Sai");
+                    return;
+                }
+            }
+            alert("Đúng");
+        });
+
+    </script>
+</body>
+
+</html>

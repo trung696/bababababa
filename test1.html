@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul></ul>
+    <script>
+        var arr = [
+            { id: 1, name: "Nguyen Van A", gender: 1 },
+            { id: 2, name: "Nguyen Van B", gender: 2 },
+            { id: 3, name: "Tran van C", gender: 1 },
+            { id: 4, name: "Nguyen Van D", gender: 2 },
+
+        ];
+        let arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            let gender = arr[i].gender == 1 ? "nam" : "nu";
+            // toán tử 3 ngôi <điều kiện> ?true:false
+            let content = "<li>" + arr[i].id + "-" + arr[i].name + "-" + gender + "</li>";
+            arr2.push(content);
+        }
+        console.log(arr2);
+
+
+        let divContent = arr.map(function (item) {
+            return '<li>'
+        })
+    </script>
+</body>
+
+</html>
